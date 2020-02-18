@@ -1,0 +1,263 @@
+@font-face {
+    font-family: "Skoda_Pro";
+    src: url("../vendor/font/Skoda_Pro.ttf");
+}
+
+:root {
+    --primary-color: #4ba82e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Skoda_Pro"!important;
+    font-weight: bold;
+    overflow-x: hidden;
+}
+
+.navbar-nav {
+    flex-direction: row!important;
+}
+
+.navbar-nav .nav-link {
+    font-size: 20px!important;
+}
+
+.nav-link {
+    display: block;
+    padding: 30px!important;
+    color: #000;
+}
+
+.nav-link:hover, .bg-darker a:hover {
+    color: var(--primary-color)!important;
+    text-decoration: none!important;
+}
+
+.bg-darker {
+    background-color: #3B3B3B;
+}
+
+.bg-darker a {
+    color: #fff!important;
+    font-size: 17px;
+    line-height: 26px;
+}
+
+/* Slider Styling */
+
+.carousel-item {
+    height: 70vh;
+    min-height: 770px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+}
+
+.carousel-item:nth-child(1) {
+    background-image: url('../images/slider/skoda-superb.jpg');
+}
+
+.carousel-item:nth-child(2) {
+    background-image: url('../images/slider/skoda-skala.jpg');
+}
+
+.carousel-item:nth-child(3) {
+    background-image: url('../images/slider/skoda-kamiq.jpg');
+}
+
+.carousel-control-prev, .carousel-control-next {
+    visibility: hidden;
+}
+
+.carousel-control-next:after {
+    visibility: visible;
+    content: '>';
+    font-size: 105px;
+    color: var(--primary-color);
+}
+
+.carousel-control-prev:after {
+    visibility: visible;
+    content: '<';
+    font-size: 105px;
+    color: var(--primary-color);
+}
+
+.action-panel div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-lighter-grey {
+    background-color: #dddada;
+    width: 57.6%;
+    margin: 60px auto;
+}
+
+.action-title {
+    background-color: var(--primary-color);
+    color: #fff;
+    margin-right: 40px;
+    width: 20%;
+    display: inline-table;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.action-title:hover {
+    color: #fff;
+    background-color: #62a84c;
+    text-decoration: none;
+}
+
+.action-title-icon {
+    padding-top: 20px;
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+.action-title-text {
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+}
+
+.action-title:last-child {
+    margin-right: 0;
+}
+
+.bg-d {
+    background-color: #000!important;
+    padding: 15px 0;
+}
+
+.bg-d a {
+    color: #fff;
+}
+
+.bg-d a:hover {
+    text-decoration: none;
+}
+
+.icon-link {
+    margin-right: 20px;
+}
+
+.icon-link:hover {
+    color: var(--primary-color);
+}
+
+.mb-4 {
+    margin-bottom: 160px!important;
+}
+
+.mb {
+    padding-top: 150px!important;
+    margin-bottom: 220px;
+}
+
+.author-link {
+    text-decoration: underline;
+}
+
+.author-link:hover {
+    text-decoration: underline!important;
+    color: var(--primary-color);
+}
+
+.flex-grid-bodyworks {
+    margin-bottom: 90px;
+}
+
+.flex-grid, .flex-grid-one-model, .flex-grid-modelBodyworkCar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flex-grid-modelBodyworkCar {
+    text-align: center;
+}
+
+.flex-grid-modelBodyworkCar .col img {
+    margin-bottom: 40px;
+}
+
+.flex-grid .col, .flex-grid-one-model .col, .flex-grid-modelBodyworkCar .col {
+    width: 100%;
+    margin: 50px 90px;
+}
+
+.flex-grid .col img, .flex-grid-one-model .col img, .flex-grid-bodyworks img, .flex-grid-modelBodyworkCar img {
+    display: block;
+    margin: 0 auto;
+}
+
+.flex-grid-modelBodyworkCar .col p span {
+    color: var(--primary-color);
+}
+
+.flex-grid a, .flex-grid-bodyworks a {
+    color: #000;
+}
+
+.flex-grid a:hover, .flex-grid-bodyworks a:hover {
+    text-decoration: none;
+}
+
+.flex-grid a:hover .scaling-img, .flex-grid-bodyworks a:hover .scaling-img {
+    transform: scale(1.1);
+}
+
+.scaling-img {
+    transition: transform 0.7s ease-in;
+}
+
+.scaling-img:hover {
+    transform: scale(1.1);
+}
+
+.bold-line {
+    border: 3px solid green;
+}
+
+#updateInfo {
+    display: none;
+}
+
+.btnTest {
+    color: #fff;
+    font-size: 18px;
+}
+
+.btnTest:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+#contact {
+    margin: 80px auto;
+}
+
+.redTxt {
+    color: rgb(221, 64, 64);
+}
+
+.cssBorder {
+    border: 1px solid #ccc;
+}
+
+.notCorrect {
+    border: 2px solid #ff0000;
+}
+
+.footer {
+    margin-top: 150px;
+}
+
