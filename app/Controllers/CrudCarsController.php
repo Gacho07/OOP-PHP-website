@@ -78,8 +78,7 @@ class CrudCarsController extends HeadController
                 addError($ex->getMessage());
                 $this->json(["error" => $ex->getMessage()], 500);
             }
-        } 
-        else {
+        } else {
             $this->json(["error" => "Bad request"], 400);
         }
     }

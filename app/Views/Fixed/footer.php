@@ -24,7 +24,7 @@
                             <a class="nav-link" href="index.php?page=carModels">Models</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Documentation.docx">Documentation</a>
+                            <a class="nav-link" href="Skoda.pdf" target="_blank">Documentation</a>
                         </li>
                     </ul>
                 </div>

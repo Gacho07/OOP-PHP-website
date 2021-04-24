@@ -5,7 +5,6 @@ require_once "app/config/config.php";
 require_once "app/config/setup.php";
 
 # Controllers
-
 use App\Controllers\AdminStatisticsController;
 use App\Controllers\HomeController;
 use App\Controllers\CarModelsController;
@@ -28,6 +27,7 @@ $scheduleTestController = new ScheduleTestController();
 $crudCarsController = new CrudCarsController();
 $insertCarController = new InsertCarController();
 $adminStatisticsController = new AdminStatisticsController();
+
 
 if (isset($_GET['page'])) {
     switch ($_GET['page']) {
@@ -75,11 +75,14 @@ if (isset($_GET['page'])) {
 } elseif (isset($_GET['ajax'])) {
     switch ($_GET['ajax']) {
         case "ajaxCarModels":
+            $carModelsController = new CarModelsController();
             $carModelsController->loadCarModels();
             break;
         case "ajaxRegister":
+            $registerController = new RegisterController();
             $registerController->loadRegister($_POST);
         case "ajaxSortFilter":
+            $sortModelsController = new CarModelsController();
             $sortModelsController->loadSortedFilteredModels($_POST);
             break;
         case "ajaxLoadCars":
